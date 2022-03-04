@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+        <link rel="stylesheet" href="css\style2.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap" rel="stylesheet">
+		<title> Cinpar 2022 - Schedule </title>
+	</head>
+	
+	<body>
+        <section class="allmighty">
+            <section class="topBar">
+                <div class="topMenu">
+                    <a href="index.html">Home</a>
+                    <a href="speakers.html">Speakers</a>
+                    <a href="schedule.html">Schedule</a>
+                    <a href="org.html">Organization</a>
+                    <a href="support.html">Support</a>
+                    <a href="papers.html">Papers</a>
+                    <a href="reg.html">Registration</a>
+                </div>
+            </section>
+
+            <section class="Slideshow">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="Assets/logo-colorida-vertical---cinpa.jpg" style="width:100%">
+                  </div>
+                
+                  <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="Assets/sakarya2.jpg" style="width:100%">
+                  </div>
+    
+                  <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="Assets/turkey2.jpg" style="width:100%">
+                  </div>
+    
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </section>
+
+            <section class="content">
+                <div class="contentTitle"> 
+                    <a>In Progress...</a>
+                </div>
+
+                <div class="mainText">
+                    <a>Please come again later!</a>
+                </div>
+
+                <div class="sponsor">
+                    
+                </div>
+            </section>
+        </section>
+        
+        <script>
+
+            
+var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+
+
+        
+        </script>
+	</body>
+</html>

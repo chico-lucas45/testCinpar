@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+        <link rel="stylesheet" href="css\style2.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap" rel="stylesheet">
+		<title> Cinpar 2022 - Papers </title>
+	</head>
+	
+	<body>
+        <section class="allmighty">
+            <section class="topBar">
+                <div class="topMenu">
+                    <a href="index.html">Home</a>
+                    <a href="speakers.html">Speakers</a>
+                    <a href="schedule.html">Schedule</a>
+                    <a href="org.html">Organization</a>
+                    <a href="support.html">Support</a>
+                    <a href="papers.html">Papers</a>
+                    <a href="reg.html">Registration</a>
+                </div>
+            </section>
+
+            <section class="Slideshow">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="Assets/logo-colorida-vertical---cinpa.jpg" style="width:100%">
+                  </div>
+                
+                  <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="Assets/sakarya2.jpg" style="width:100%">
+                  </div>
+    
+                  <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="Assets/turkey2.jpg" style="width:100%">
+                  </div>
+    
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </section>
+
+            <section class="content">
+                <div class="contentTitle"> 
+                    <a>Key Dates</a>
+                </div>
+                    
+                <div class="mainTextt">
+                    <ul>
+                        <li>Deadline for full papers’ submission - 5 June 2022<br></li>
+                        <li>Notification for acceptance of full papers - 5th July 2022<br></li>
+                        <li>Deadline for revised papers’ submission - 09th August 2022<br></li>
+                        <li>Final notification for papers - 09th September 2022<br></li>
+                        <li>CINPAR 2022 - 17 – 19th November 2022</li>
+                    </ul>
+                </div>
+
+                <div class="contentTitle"> 
+                    <a>Instrctions for abstracts and articles</a>
+                </div>
+
+                <div class="mainTextt">
+                    <ul>
+                        <li>The templates will be available in Portuguese and English.
+                             However, Abstracts and Articles may be written in Portuguese, English or Spanish.</li>
+
+                        <li>Abstracts must have a maximum of 300 (three hundred) words.</li>
+
+                        <li>Articles must have a maximum of 12 (twelve) pages.</li>
+
+                        <li>Submission of articles must be performed through the EasyChair platform;</li>
+
+                        <li>Each author may only submit up to a maximum of two articles. If an author is involved in more than two articles in partnership with other co-authors,
+                             the submission of the other articles must be made by one of the co-authors.</li>
+
+                        <li>If the author will not attend the CINPAR 2022, to ensure the paper publication the author
+                             or co-author who makes the submission must be registered in CINPAR 2022 and pay a corresponding registration fee.<br></li>
+
+                        <li>Articles will be registered with Digital Object Identifier (DOI).</li>
+
+                        <li>The best articles presented at the congress will be published in a special 
+                            edition of the <a href="https://www.springer.com/journal/41024" target="_blank">Building Pathology and Rehabilitation Journal</a>.</li>
+                    </ul>
+                </div>
+
+                <div class="contentTitle"> 
+                    <a>Step by Step to submit full article</a>
+                </div>
+
+                <div class="mainTextt">
+                    <ul>
+                        <li>Access the EasyChair platform;</li>
+                        <li>Follow the instructions on the page;</li>
+                        <li>In the "organization" field, indicate the institution in which you study / work;</li>
+                        <li>In the "paper" field, submit a file with the ARTICLE (in the template provided) with a maximum of 12 pages;</li>
+                        <li>Fill out all mandatory fields and complete your submission.</li>
+                    </ul>
+                </div>
+
+                <div class="contentTitle"> 
+                    <a>Paper template for download</a>
+                </div>
+
+                <div class="mainTextt">
+                    <a>The templates for articles are available for download in
+                    English and Portuguese (Click on the corresponding button to start the download).</a><br>
+                    <a href="Template_CINPAR2022(EN).docx" download="Template_CINPAR2022(EN)">Download here!</a>
+                </div>
+
+                <div class="contentTitle"> 
+                    <a>Paper Submission</a>
+                </div>
+
+                <div class="mainTextt">
+                    <a>The submission of abstracts and articles must be made through the Easychair platform,
+                         to be redirected to the page click on the button below.</a><br>
+                    
+                    <a href="#">Easychair link coming soon...</a>
+                </div>
+
+                <div class="sponsor">
+                    
+                </div>
+            </section>
+        </section>
+        
+        <script>
+
+            
+var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+
+
+        
+        </script>
+	</body>
+</html>

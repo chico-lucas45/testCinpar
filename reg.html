@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+        <link rel="stylesheet" href="css\style2.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap" rel="stylesheet">
+		<title> Cinpar 2022 - Registration </title>
+	</head>
+	
+	<body>
+        <section class="allmighty">
+            <section class="topBar">
+                <div class="topMenu">
+                    <a href="index.html">Home</a>
+                    <a href="speakers.html">Speakers</a>
+                    <a href="schedule.html">Schedule</a>
+                    <a href="org.html">Organization</a>
+                    <a href="support.html">Support</a>
+                    <a href="papers.html">Papers</a>
+                    <a href="reg.html">Registration</a>
+                </div>
+            </section>
+
+            <section class="Slideshow">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="Assets/logo-colorida-vertical---cinpa.jpg" style="width:100%">
+                  </div>
+                
+                  <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="Assets/sakarya2.jpg" style="width:100%">
+                  </div>
+    
+                  <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="Assets/turkey2.jpg" style="width:100%">
+                  </div>
+    
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </section>
+
+            <section class="content">
+                <div class="contentTitle"> 
+                    <a>Dates</a>
+                </div>
+
+                <div class="mainText">
+                    <a>Preferably, we indicate that the registration of the
+                         authors of the articles should be done by 9th September 2022.<br>
+                         Registration must be completed by October 30, 2022.<br>
+                        </a>
+                </div>
+
+                <div class="contentTitle"> 
+                    <a>Values</a>
+                </div>
+
+                <div class="mainTextt">
+                    <a>Until 9th September 2022 </a>
+                    <div class="values">
+                        <ul>
+                            <li>Full registration - 200€</li>
+                            <li>Registration – Members of supporting Associations* - 150€</li>
+                            <li>Students** - 70€</li>
+                            <li>Publication fee*** - 70€</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mainTextt">
+                    <a>After 10th September 2022 </a>
+                    <div class="values">
+                        <ul>
+                            <li>Full registration - 300€</li>
+                            <li>Registration – Members of supporting Associations* - 250€</li>
+                            <li>Students** - 150€</li>
+                            <li>Publication fee*** - 150€</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mainTextt">
+                    <a>* Members of Associations supporting the conference (U. Sakaraya, UFC, UVA, FEUP, UTN, IFPB, PUC Chile, BUT, UCJC, IDD, ALCONPAT, IBRACON)
+                         , can obtain a reduction fee for registration. When registering, proof of enrolment as member of these Associations should be provided.</a><br><br>
+
+                    <a>** The student registration includes the participation in the conference sessions, the delegate pack and conference materials, access to the coffee breaks and lunches.
+                         This fee does not include the conference dinner. When registering, student need to proof of enrolment in a graduate or post-graduate course. Copies of student ID cards are accepted.</a><br><br>
+                    
+                    <a>*** Publication fee is a registration without the authors attend the conference, in order to ensure one paper publication in the CINPAR 2022 proceedings by fee. </a><br><br>
+                </div>
+
+                <div class="mainTextt">
+                    <a>Registration in CINPAR 2022 allows submission and ensures the publication of up to two articles per author.</a>
+                </div>
+
+
+                <div class="sponsor">
+                    
+                </div>
+            </section>
+        </section>
+        
+        <script>
+
+            
+var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+
+
+        
+        </script>
+	</body>
+</html>
